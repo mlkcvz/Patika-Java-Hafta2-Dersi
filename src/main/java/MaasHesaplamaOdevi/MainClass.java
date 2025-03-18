@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MainClass
 {
     public static void main(String[] args) {
-        Employee employee = new Employee();
+        Employee employee = new Employee("Ahmet Yılmaz", 1500, 45, 2010);
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("maaşını gir : ");
@@ -19,6 +19,9 @@ public class MainClass
         System.out.println("işe başlangıç yılınızı giriniz : ");
         int baslangicYili = scanner.nextInt();
         employee.raiseSalary(baslangicYili,maas);
+
+
+        System.out.println(employee.toString());
 
 
     }

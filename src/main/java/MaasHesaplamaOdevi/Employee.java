@@ -68,7 +68,19 @@ public class Employee {
 
 
         }
+        else {
+            System.out.println("hatalı veri girdin ! ");
+        }
 
+
+    }
+
+
+    public String toString() {
+        return "Name: " + name + "\n" +
+                "Salary: " + salary + "\n" +
+                "Work Hours: " + workHours + "\n" +
+                "Hire Year: " + hireYear + "\n" ;
 
     }
 }
